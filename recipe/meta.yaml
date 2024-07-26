@@ -1,5 +1,5 @@
 {% set name = "poligrain" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/poligrain-{{ version }}.tar.gz
-  sha256: 5caee9c04da9212ec5b89407b60a5bbad85c7e9262220668723fbd679a90cac2
+  sha256: 012af741359516a199ee6dd2b7de9196641ab96408d3755b34388fde059f10f6
 
 build:
   noarch: python
@@ -16,18 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python >=3.10
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >=3.9,<3.12
+    - python >=3.10
     - netcdf4 >=1.6.5,<2.0.0
-    - xarray >=2023.12.0,<2024.0.0
+    - xarray >=2023.12.0
     - matplotlib-base >=3.8.2,<4.0.0
-    - nbmake >=1.4.6,<2.0.0
-    - pyproj >=3.6.1,<4.0.0
-    - scipy >=1.12.0,<2.0.0
+    - nbmake >=1.4.6
+    - pyproj >=3.6.1
+    - scipy >=1.12.0
     - sparse
     - shapely
 
