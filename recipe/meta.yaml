@@ -1,13 +1,13 @@
 {% set name = "poligrain" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/poligrain-{{ version }}.tar.gz
-  sha256: 35de80635f1bffa6b2abac82d664b8f9a04f57e4dbebbac5aa9060fe0ba4a982
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/poligrain-{{ version }}.tar.gz
+  sha256: dc4ce265bb9d73725559543fd5323a690a0a65f57c5bc30d8268be2fcbd77969
 
 build:
   noarch: python
