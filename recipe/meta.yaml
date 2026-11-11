@@ -1,14 +1,14 @@
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 {% set name = "poligrain" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/poligrain-{{ version }}.tar.gz
-  sha256: c5b7d1e7d5a2f7121321d042dcd1c21acd76f19b7eba4b056eaef5493e3f9ee8
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/poligrain-{{ version }}.tar.gz
+  sha256: f2d7e9af1777e8d8d8f06b9fefecf3216a1275fa1ca45c412a86cf7b1fe5479c
 
 build:
   noarch: python
